@@ -19,10 +19,9 @@ page_sections:
 
 - template: detail-content
   block: text-1
-  id: education
   color: pale-blue
-  headline: <strong>Education</strong>
-  content: <h4 class="w3-opacity"><b> My First Post </b></h4>          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012-09-12</h6>
+  headline: <strong>First Blog</strong>
+  content: <h4 class="w3-opacity"><b><a href="/2012/09/12/first-post"> My First Post </a></b></h4>          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2012-09-12</h6>
           <p> working on it </p>
     
 ---
