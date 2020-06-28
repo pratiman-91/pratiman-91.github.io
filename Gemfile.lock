@@ -61,10 +61,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.6)
+  jekyll (~> 3.8)
   jekyll-feed
   jekyll-menus
   tzinfo-data
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
