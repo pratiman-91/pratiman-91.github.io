@@ -1,6 +1,5 @@
----
-layout: default
----
+{% include head.html %}
+
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 <header class="block block-header-2">
 
@@ -51,3 +50,4 @@ layout: default
 </section>
 {%- endfor -%}
 
+{% include footer.html %}
