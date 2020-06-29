@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{%- assign _posts = site.posts | sort: 'date' | reverse -%}
+<header class="block block-header-2">
+
+    <div id="" class="block-header-2--logo">
+      <a href="http://localhost:4000">
+        <img src="/uploads/2018/06/21/forestry-full.svg" alt="Pratiman Homepage">
+      </a>
+    </div>
+  
+    <nav class="block-header-2--nav">
+      <ul>
+          
+          <li id="" class="nav-item "><a href="/">Home</a></li>
+          
+      </ul>
+      <a id="" class="button primary small block-header-2--cta" href="blog">Blog</a>
+    </nav>
+  
+</header>
+
+<section id="blog" class="block block-hero-1">
+    <div class="container">
+      <h1><span class="light"><strong>Blogs</strong></span></h1>
+    </div>
+</section>
+
+
+{%- for post in site.posts -%}
+<section id="" class="block block-text-1">
+    <div class="container w3-hover-pale-blue" >
+      <div class="columns">
+        <div class="column headline">
+          <h3><strong><a href="{{ site.url }}{{ post.url }}">{{- post.title -}}</a></strong></h3>
+          
+           
+			{% if post.author -%}{{- post.author }} | {% endif %}
+			{{- post.date | date_to_long_string -}}
+        
+        </div>
+        <div class="column text">
+            <p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p>
+            <a href="{{ site.url }}{{ post.url }}">read more</a>
+            {%- assign _content = _excerpt | append: _link -%}
+        </div>
+      </div>
+    </div>
+</section>
+{%- endfor -%}
+

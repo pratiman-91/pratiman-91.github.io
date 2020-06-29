@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<header class="block block-header-2">
+
+    <div id="" class="block-header-2--logo">
+      <a href="http://localhost:4000">
+        <img src="/uploads/2018/06/21/forestry-full.svg" alt="Pratiman Homepage">
+      </a>
+    </div>
+  
+    <nav class="block-header-2--nav">
+      <ul>
+          
+          <li id="" class="nav-item "><a href="/">Home</a></li>
+          
+      </ul>
+      <a id="" class="button primary small block-header-2--cta" href="blog">Blog</a>
+    </nav>
+  
+</header>
+
+<section id="blog" class="block block-hero-1">
+    <div class="container">
+      <h1><span class="light"><strong>Blogs</strong></span></h1>
+    </div>
+  </section>
+
+  <section id="" class="block block-text-1">
+    <div class="container w3-hover-pale-blue" >
+      <div class="columns">
+        <div class="column headline">
+          <h3><strong>{{- page.title -}}</strong></h3>
+          <p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+        </div>
+        <div class="column text">
+            {{- content -}}
+        </div>
+      </div>
+    </div>
+  </section>
