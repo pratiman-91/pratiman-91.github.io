@@ -37,8 +37,9 @@ layout: default
           
            
 			{% if post.author -%}{{- post.author }} | {% endif %}
-			{{- post.date | date_to_long_string -}}
-        
+      {{- post.date | date_to_long_string -}}
+      <br>
+      {% include read_time.html content=post.content %}
         </div>
         <div class="column text">
             <p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p>

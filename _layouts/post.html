@@ -20,18 +20,37 @@ layout: default
   
 </header>
 
-<section id="blog" class="block block-hero-1">
-    <div class="container">
-      <h1><span class="light"><strong>Blogs</strong></span></h1>
-    </div>
-  </section>
+
 
   <section id="" class="block block-text-1">
-    <div class="container w3-hover-pale-blue" >
+    <div class="container" >
       <div class="columns">
         <div class="column headline">
           <h3><strong>{{- page.title -}}</strong></h3>
           <p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+          {% include read_time.html content=content %}
+
+          <div class="share-box">
+            <h5>Share this:</h5>
+            
+            <a class="f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-facebook"></i><span></span></a>
+            
+            <a class="t" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fab fa-twitter"></i><span></span></a>
+            
+            <a class="g" href="https://plus.google.com/share?url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-google-plus"></i><span></span></a>
+            
+            <a class="r" href="http://www.reddit.com/submit?url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+            'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-reddit"></i><span></span></a>
+            
+            <a class="l" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{site.baseurl}}{{ page.url }}&title={{ page.title }}&summary={{ page.desc }}&source=webjeda" onclick="window.open(this.href, 'mywin',
+            'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-linkedin"></i><span></span></a>
+            
+            <a class="e" href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{site.baseurl}}{{ page.url }}"><i class="fa fa-envelope fa"></i><span></span></a>                          
+            </div>
+
         </div>
         <div class="column text">
             {{- content -}}
