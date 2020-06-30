@@ -13,9 +13,7 @@ dem = xr.open_rasterio('https://download.osgeo.org/geotiff/samples/pci_eg/latlon
 dem = dem[0] #getting the first band
 ```
 
-The easiest way to plot is using plot function of xarray
-
-```dem.plot()```
+The easiest way to plot is using plot function of xarray ```dem.plot()```.
 
 ![Dem Plot](/uploads/2020/06/30/Fig1.png)
 
@@ -29,8 +27,6 @@ import xarray as xr
 
 dem = xr.open_rasterio('https://download.osgeo.org/geotiff/samples/pci_eg/latlong.tif')
 dem = dem[0]
-
-dem.plot()
 
 # Define extents
 lat_min = dem.y.min()
