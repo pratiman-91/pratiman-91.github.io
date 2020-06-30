@@ -52,3 +52,7 @@ fig.savefig(r'geotiff.png')
 ```
 
 ![{Pro Plot](/uploads/2020/06/30/Fig2.png)
+
+I am sharing the whole script:
+
+<script src="https://gist.github.com/pratiman-91/97bffddf1c48743ddf27561b7022978f.js"></script>
