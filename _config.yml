@@ -12,11 +12,22 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default" # this ensures all content renders with layouts/default.html
-
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: pratiman
+      commenting: open
 plugins:
   - jekyll-feed
   - jekyll-menus
 
+emptyArray: []
+
+comments:
+  receiver: https://pratiman-91.github.io//api/PostComment}}
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
