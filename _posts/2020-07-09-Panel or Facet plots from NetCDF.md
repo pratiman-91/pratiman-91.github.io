@@ -3,7 +3,7 @@ layout: post
 title: Panel or Facet plots from NetCDF4
 author: Pratiman
 ---
-Usually, working with geographic data, you have to use GIS software. For plotting multiple plots with the same quality might be cumbersome. Hence, some people choose to automate the process; I was also struggling to do the same. So here is a simple example of plotting a GeoTIFF file.
+Usually, working with met data, you have to plot multiple figures. Here, we plot 6 plots in the same figure including plot numbers.
 
 First of all load your dataset using ```xarray.open_rasterio```.
 
