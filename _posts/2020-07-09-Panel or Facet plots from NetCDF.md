@@ -20,7 +20,7 @@ g_simple = t.plot(x='lon', y='lat', col='time', col_wrap=3,
 
 The easiest way to plot is by using the plot function of xarray ```t.plot(x='lon', y='lat', col='time', col_wrap=3)```.
 
-![Dem Plot](/uploads/2020/07/10/Fig1.png)
+![Panel Plot](/uploads/2020/07/10/Fig1.png)
 
 This plot has certain drawbacks. First of all, x and y labels are too small; there is no projection, and the colorbar need to be changed. You can change it to make it suitable for publishing.
 
@@ -63,7 +63,7 @@ fig.colorbar(m, loc='b', label='Temperature (K)') #Adding colorbar with label
 #Saving the Figure
 fig.savefig(r'fig.png')  
 ```
-![{Pro Plot](/uploads/2020/06/30/Fig2.png)
+![{Pro Plot](/uploads/2020/07/10/Fig2.png)
 
 ## Explanation
 
