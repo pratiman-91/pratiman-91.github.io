@@ -5,7 +5,7 @@ author: Pratiman
 ---
 Usually, working with met data, you have to plot multiple figures. Here, we plot 6 plots in the same figure including plot numbers.
 
-First of all load your dataset using ```xarray.open_rasterio```.
+First of all load your dataset using ```xarray.open_dataset```.
 
 ```python
 import xarray as xr
