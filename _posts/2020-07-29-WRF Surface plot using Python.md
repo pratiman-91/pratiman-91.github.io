@@ -51,7 +51,7 @@ cbar = fig.colorbar(m, loc='b', label='Sea Level Pressure (hPa)')
 fig.savefig('slp.png')
 ```
 ## Output
-![{WRF SLP](/uploads/2020/07/30/Fig1.png)
+![{WRF SLP](/uploads/2020/07/29/Fig1.png)
 
 # Explanation
 
@@ -134,4 +134,4 @@ fig, axs = plot.subplots(proj='cyl')
 ```
 
 ## Output
-![{WRF SLP 1](/uploads/2020/07/30/Fig2.png)
+![{WRF SLP 1](/uploads/2020/07/29/Fig2.png)
