@@ -1,9 +1,5 @@
 {% include head.html %}
 
-{{ if (findRE "<pre" .Content 1) }}
-    <script src="/js/copy-code-button.js"></script>
-{{ end }}
-
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 <header class="block block-header-2">
 
