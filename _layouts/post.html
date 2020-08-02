@@ -61,11 +61,28 @@
         </div>
         <div class="column text">
             {{- content -}}
+
+            <div class="column text">
+              If you would like to provide any suggestions to this post. Kindly email me at <a href="mailto:pratiman_patel@hotmail.com?Subject={{ page.title }}">pratiman_patel@hotmail.com</a>
+            </div>
+
+            <div class="post-nav">
+              <p>
+                {% if page.previous.url %}
+                <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.title}}</a>
+                {% endif %}
+              </p>
+              <p>
+                {% if page.next.url %}
+                <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&#8674;</a>
+                {% endif %}
+              </p>
+            </div>
+
         </div>
-        <div class="column text">
-          If you would like to provide any suggestions to this post. Kindly email me at <a href="mailto:pratiman_patel@hotmail.com?Subject={{ page.title }}">pratiman_patel@hotmail.com</a>
         
-        </div>
+        
+        
       </div>
     </div>
   </section>
