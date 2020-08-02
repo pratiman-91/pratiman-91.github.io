@@ -1,5 +1,24 @@
 {% include head.html %}
 
+document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+  var button = document.createElement('button');
+  button.className = 'copy-code-button';
+  button.type = 'button';
+  button.innerText = 'Copy';
+
+  var pre = codeBlock.parentNode;
+  if (pre.parentNode.classList.contains('highlight')) {
+      var highlight = pre.parentNode;
+      highlight.parentNode.insertBefore(button, highlight);
+  } else {
+      pre.parentNode.insertBefore(button, pre);
+  }
+});
+
+{{ if (findRE "<pre" .Content 1) }}
+    <script src="/js/copy-code-button.js"></script>
+{{ end }}
+
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 <header class="block block-header-2">
 
