@@ -2,9 +2,10 @@ title: Pratiman Homepage
 author: Pratiman Patel
 email: pratiman_patel@hotmail.com
 description: >-
-  This is my webpage with some blogs.
+  This is Pratiman webpage with some blogs.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # your site's origin, e.g. https://forestry.io
+url: "https://pratiman-91.github.io" # your site's origin, e.g. https://forestry.io
+name:         Pratiman Blogs
 
 # Build settings
 defaults:
