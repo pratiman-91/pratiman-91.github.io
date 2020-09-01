@@ -84,7 +84,7 @@ fseeko64 is supported
 ### Open configure.wrf and edit:
 You can either use graphical interface or command line.
 If you want to you use command line, then go for ```nano ``` editor.
-To edit this this use following commands:
+To edit use following commands:
 
 ```bash
 nano configure.wrf
@@ -94,7 +94,7 @@ Edit here:
  LIB_EXTERNAL    = \
                       -L$(WRF_SRC_ROOT_DIR)/external/io_netcdf -lwrfio_nf -L/usr/lib -lnetcdff -lnetcdf     
 ```
-Once done with the editing use ```Ctrl+O``` to write/save the edits and ```Ctrl+X``` to exit.
+Once done with the editing, use ```Ctrl+O``` to write/save the edits and ```Ctrl+X``` to exit.
 
 ### Now, compile the code:
 ```bash
@@ -179,6 +179,13 @@ Configuration successful. To build the WPS, type: compile
 ```
 
 ### Open configure.wps and edit:
+To edit use following commands:
+
+```bash
+nano configure.wrf
+```
+Edit here:
+
 ```
 WRF_LIB         =       -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
                         -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
