@@ -4,7 +4,6 @@ title: Installing WRF from scratch in an HPC using Intel Compilers
 author: Pratiman
 ---
 
-# Installing WRF from scratch in an HPC using Intel Compilers
 The Weather Research and Forecasting (WRF) Model is a mesoscale numerical weather prediction system utilized worldwide for operational forecasts and research purposes.
 
 Here is the installation of the WRF 4.2.1 model using Intel compilers. It will be helpful to those who want to install WRF from scratch in an HPC environment. Some of the steps may not be required depending on your HPC environment.
@@ -94,7 +93,6 @@ cd WRF-4.2.1/
 ### Output:
 
 ```bash
-
 checking for perl5... no
 checking for perl... found /usr/local/bin/perl (perl)
 Will use NETCDF in dir: /home/wrf/wrf_libs_intel/
@@ -184,6 +182,7 @@ export JASPERINC=/home/wrf/wrf_libs_intel/include/
 ```
 
 #### Output:
+```
 ------------------------------------------------------------------------
 Please select from among the following supported platforms.
 
@@ -232,6 +231,7 @@ Enter selection [1-40] : 17
 ------------------------------------------------------------------------
 Configuration successful. To build the WPS, type: compile
 ------------------------------------------------------------------------
+```
 
 ### Compile the WPS
 ```bash
