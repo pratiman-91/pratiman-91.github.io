@@ -1,3 +1,9 @@
+---
+layout: post
+title: Installing WRF from scratch in an HPC using Intel Compilers
+author: Pratiman
+---
+
 # Installing WRF from scratch in an HPC using Intel Compilers
 The Weather Research and Forecasting (WRF) Model is a mesoscale numerical weather prediction system utilized worldwide for operational forecasts and research purposes.
 
