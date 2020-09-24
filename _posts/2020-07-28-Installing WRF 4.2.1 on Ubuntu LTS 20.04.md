@@ -182,7 +182,7 @@ Configuration successful. To build the WPS, type: compile
 To edit use following commands:
 
 ```bash
-nano configure.wrf
+nano configure.wps
 ```
 Edit here:
 
