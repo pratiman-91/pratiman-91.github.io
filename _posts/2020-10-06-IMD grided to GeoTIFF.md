@@ -26,7 +26,7 @@ import imdlib as imd
 start_yr = 2010
 end_yr = 2018
 variable = 'rain' # other options are ('tmin'/ 'tmax')
-file_dir = (r'C:\Users\imdlib\Desktop\' #Path to save the files)
+file_dir = (r'C:\Users\imdlib\Desktop\') #Path to save the files
 imd.get_data(variable, start_yr, end_yr, fn_format='yearwise', file_dir=file_dir)
 
 # Opeining the downloaded dataset
