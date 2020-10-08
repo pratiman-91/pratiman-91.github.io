@@ -58,7 +58,7 @@ Executing transaction: done
 1. Open Spyder.
 ![Open Spyder](/uploads/2020/10/07/FIG7.png)
 
-2. Test your first imdlib code. Copy the following code to the to editior window of the spyder and run.
+2. Test your first imdlib code. Copy the following code to the to editor window of the spyder and run.
 
 ```python
 import imdlib as imd
@@ -98,4 +98,4 @@ pr.rio.to_raster(r"IMD_Rain_2010_2018.tif")
 
 ![Output Plot](/uploads/2020/10/07/FIG11.png)
 
-Welocome to the world of Python!
+Welcome to the world of Python!
