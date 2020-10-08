@@ -23,6 +23,7 @@ There are multiple options you can choose for Python distribution. I like the us
 2. Write the following code in the anaconda prompt window
 ```
 conda install -c conda-forge numpy scipy rioxarray xarray netcdf4 proplot matplotlib cartopy spyder
+
 pip install imdlib
 ```
 ![Install packages](/uploads/2020/10/07/FIG8.png)
@@ -54,6 +55,7 @@ Executing transaction: done
 ![Open Spyder](/uploads/2020/10/07/FIG7.png)
 
 2. Test your first imdlib code. Copy the following code to the to editior window of the spyder and run.
+
 ```python
 import imdlib as imd
 import rioxarray as rio
@@ -84,9 +86,11 @@ pr = pr.rio.set_spatial_dims('lon', 'lat')
 #Saving the file
 pr.rio.to_raster(r"IMD_Rain_2010_2018.tif")
 ```
+
 ![Run Code](/uploads/2020/10/07/FIG9.png)
 
 #### Output:
 ![Output Plot](/uploads/2020/10/07/FIG10.png)
+
 ![Output Plot](/uploads/2020/10/07/FIG11.png)
 
