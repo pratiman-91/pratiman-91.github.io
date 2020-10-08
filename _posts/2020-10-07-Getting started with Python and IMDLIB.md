@@ -21,13 +21,17 @@ There are multiple options you can choose for Python distribution. I like the us
 1. Open Anaconda Prompt (miniconda3)
 ![Open miniconda prompt](/uploads/2020/10/07/FIG4.png)
 2. Write the following code in the anaconda prompt window
-```
-conda install -c conda-forge numpy scipy rioxarray xarray netcdf4 proplot matplotlib cartopy spyder
 
+```bash
+conda install -c conda-forge numpy scipy rioxarray xarray netcdf4 proplot matplotlib cartopy spyder
+```
+```python
 pip install imdlib
 ```
+
 ![Install packages](/uploads/2020/10/07/FIG8.png)
 #### Output:
+
 ```
 Collecting package metadata (current_repodata.json): done
 Solving environment: failed with initial frozen solve. Retrying with flexible solve.
@@ -94,3 +98,4 @@ pr.rio.to_raster(r"IMD_Rain_2010_2018.tif")
 
 ![Output Plot](/uploads/2020/10/07/FIG11.png)
 
+Welocome to the world of Python!
