@@ -10,7 +10,7 @@ Here is the short version of the installation of WRF 4.2.1 on an Intel-based i7 
  
 ## Installing the pre-requisites:
 ```bash
-sudo apt install csh gfortran m4 mpich libhdf5-mpich-dev libpng-dev libnetcdff-dev netcdf-bin ncl-ncarg
+sudo apt install csh gfortran m4 mpich libhdf5-mpich-dev libpng-dev libnetcdff-dev netcdf-bin ncl-ncarg build-essential
 ```
 
 ### Install Jasperlib:
