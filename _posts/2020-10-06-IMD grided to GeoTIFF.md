@@ -3,6 +3,11 @@ layout: post
 title: India Meteorological Department (IMD) grided data to GeoTIFF
 author: Saswata Nandi and Pratiman Patel
 ---
+## Update [27 Feb 2021]
+For latest documentation, please visit https://imdlib.readthedocs.io/en/latest/
+
+Now, you can convert the IMD dataset to GeoTIFF using ```data.to_geotiff('test.tif', file_dir)```.
+
 
 ## Description
 IMDLIB is a python package to download and handle binary grided data from India Meteorological Department (IMD). For more information about the IMD datasets, follow the following link: http://imdpune.gov.in/Clim_Pred_LRF_New/Grided_Data_Download.html
