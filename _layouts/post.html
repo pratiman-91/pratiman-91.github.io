@@ -78,16 +78,8 @@
                 {% endif %}
               </p>
             </div>
-
-        </div>
-        
-        
-        
-      </div>
-    </div>
-  </section>
-
-<form method="POST" action="https://api.staticman.net/v3/entry/github/eduardoboucas/staticman/gh-pages/comments">
+            <div class="column text">
+            <form method="POST" action="https://github-comments.herokuapp.com/v3/entry/github/pratiman-91/pratiman-91.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="https://pratiman-91.github.io/blog.html">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
@@ -96,7 +88,18 @@
   <label><textarea name="fields[message]"></textarea>Message</label>
   
   <button type="submit">Go!</button>
+                </div>
 </form>
+            
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </section>
+
+
 
 
   {% include footer.html %}
