@@ -18,7 +18,7 @@ for WRF out file.
 5.  Proplot (optional)
 
 ## The Plot
-1.  Import the libraries.
+1. Import the libraries.
 
 ``` python
 import wrf
@@ -31,7 +31,7 @@ from metpy.plots import SkewT
 from metpy.units import units
 ```
 
-2.  Load the WRF file and get the XY values from the lat/long. (Change Here!)
+2. Load the WRF file and get the XY values from the lat/long. (Change Here!)
 
 ``` python
 wrfin = Dataset(r'wrfout_d01_2017-06-08_00_00_00')
@@ -39,7 +39,7 @@ lat_lon = [48.856, 2.352]
 x_y = wrf.ll_to_xy(wrfin, lat_lon[0], lat_lon[1])
 ```
 
-3.  Get required variables, i.e., pressure, temperature, dew point    temperature, u and v wind components.
+3. Get required variables, i.e., pressure, temperature, dew point    temperature, u and v wind components.
 
 ``` python
 p1 = wrf.getvar(wrfin,"pressure",timeidx=0)
@@ -49,7 +49,7 @@ u1 = wrf.getvar(wrfin,"ua",timeidx=0)
 v1 = wrf.getvar(wrfin,"va",timeidx=0)
 ```
 
-4.  Extract the location based on XY values.
+4. Extract the location based on XY values.
 
 ``` python
 p = p1[:,x_y[0],x_y[1]] * units.hPa
@@ -59,7 +59,7 @@ u = v1[:,x_y[0],x_y[1]] * units('m/s')
 v = u1[:,x_y[0],x_y[1]] * units('m/s')
 ```
 
-5.  Simple plot.
+5. Simple plot.
 
 ``` python
 skew = SkewT()
@@ -84,7 +84,7 @@ plt.savefig('SkewT_Simple.png', bbox_inches='tight')
 ![SkewT_Simple](/uploads/2021/08/05/SkewT_Simple.png){height="400"
 width="400"}
 
-6.  Better plot.
+6. Better plot.
 
 ``` python
 # Example of defining your own vertical barb spacing
