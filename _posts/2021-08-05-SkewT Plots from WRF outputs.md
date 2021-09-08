@@ -81,8 +81,7 @@ skew.ax.set_ylabel('Pressure (hPa)')
 plt.savefig('SkewT_Simple.png', bbox_inches='tight')
 ```
 
-![SkewT_Simple](/uploads/2021/08/05/SkewT_Simple.png){height="400"
-width="400"}
+![SkewT_Simple](/uploads/2021/08/05/SkewT_Simple.png)
 
 6. Better plot.
 
@@ -116,8 +115,7 @@ skew.ax.set_ylabel('Pressure (hPa)')
 plt.savefig('SkewT_Advanced.png', bbox_inches='tight')
 ```
 
-![SkewT_Advanced](/uploads/2021/08/05/SkewT_Advanced.png){height="400"
-width="400"}
+![SkewT_Advanced](/uploads/2021/08/05/SkewT_Advanced.png)
 
 ## Final Code
 
