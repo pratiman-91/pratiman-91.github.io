@@ -21,6 +21,7 @@ page_sections:
   cta:
     url: "blog.html"
     button_text: Blog
+  cta:
     url: "colormaps/"
     button_text: Colormaps
 
