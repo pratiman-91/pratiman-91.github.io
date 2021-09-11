@@ -5,10 +5,7 @@ author: Pratiman Patel
 ---
 
 # Colormaps
-
-
 Colormaps is a library of collection of colormaps or color palettes for Python. It's written in Python with matplotlib and numpy as dependencies. You can use Colormaps to customize matplotlib plots.
-
 
 Colormaps has colormaps or color palettes from:
 
@@ -21,8 +18,7 @@ Colormaps has colormaps or color palettes from:
 - [tableau](https://pratiman-91.github.io/colormaps/docs/tableau)
 - `may be more`
 
-Docs: https://pratiman-91.github.io/colormaps/
----
+### Docs: [https://pratiman-91.github.io/colormaps/](https://pratiman-91.github.io/colormaps/)
 
 ## Getting started
 
