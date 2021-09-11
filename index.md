@@ -18,6 +18,8 @@ page_sections:
     link_text: Projects
   - link: "#publications"
     link_text: Publications
+  - link: "colormaps/"
+    link_text: Colormaps
   cta:
     url: "blog.html"
     button_text: Blog
