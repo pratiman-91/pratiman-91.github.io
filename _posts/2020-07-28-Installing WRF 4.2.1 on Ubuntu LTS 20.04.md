@@ -22,6 +22,8 @@ cd jasper-1.900.29/
 make
 sudo make install
 ```
+> If there is a compilation error then following fix maybe implemented (Thanks to Lena Marie Müller):
+```sed -i 's/char *optstr/const char *optstr/g' src/libjasper/jpg/jpg_dummy.c```
 
 ## Get the WRF Source Code:
 ```bash

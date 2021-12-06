@@ -80,6 +80,9 @@ make
 make install
 ```
 
+> If there is a compilation error then following fix maybe implemented (Thanks to Lena Marie Müller):
+```sed -i 's/char *optstr/const char *optstr/g' src/libjasper/jpg/jpg_dummy.c```
+
 ## WRF Install
 ```bash
 export NETCDF=/home/wrf/wrf_libs_intel/
