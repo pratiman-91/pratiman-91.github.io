@@ -10,11 +10,12 @@ Here is the installation of the WRF 4.2.1 model using Intel compilers. It will b
 
 ## Required Libraries
 1. zlib
-2. HDF5
-3. NetCDF
-4. JasPer
+2. libpng (if required)
+3. HDF5
+4. NetCDF
+5. JasPer
 
-Generally, these libraries should be their (except for Jasper). If you do not have those then install using the steps below or you directly start from Step 4:
+Generally, these libraries should be their (except for Jasper). If you do not have those then install using the steps below or you directly start from Step 5:
 
 ### Setting up the environemnt for Intel compilers
 ```bash
@@ -38,7 +39,19 @@ make
 make install
 ```
 
-### 2. Installing HDF5
+### 2. Installing libpng
+```bash
+wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.37/libpng-1.6.37.tar.gz
+
+tar xvf libpng-1.6.37.tar.gz
+cd libpng-1.6.37/
+
+./configure --prefix=/home/wrf/wrf_libs_intel/ 
+make
+make install
+```
+
+### 3. Installing HDF5
 ```bash
 cd ../
 wget https://hdf-wordpress-1.s3.amazonaws.com/wp-content/uploads/manual/HDF5/HDF5_1_12_0/source/hdf5-1.12.0.tar.gz
@@ -47,7 +60,7 @@ make
 make install
 ```
 
-### 3. Installing NetCDF
+### 4. Installing NetCDF
 ```bash
 cd ../
 wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-c-4.7.4.tar.gz
@@ -70,7 +83,7 @@ make
 make install
 ```
 
-### 4. Installing JasPer
+### 5. Installing JasPer
 ```bash
 cd ../
 wget https://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.29.tar.gz
