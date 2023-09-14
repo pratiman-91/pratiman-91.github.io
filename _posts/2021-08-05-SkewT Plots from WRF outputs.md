@@ -55,8 +55,8 @@ v1 = wrf.getvar(wrfin,"va",timeidx=0)
 p = p1[:,x_y[0],x_y[1]] * units.hPa
 T = T1[:,x_y[0],x_y[1]] * units.degC
 Td = Td1[:,x_y[0],x_y[1]] * units.degC
-u = v1[:,x_y[0],x_y[1]] * units('m/s')
-v = u1[:,x_y[0],x_y[1]] * units('m/s')
+u = u1[:,x_y[0],x_y[1]] * units('m/s')
+v = v1[:,x_y[0],x_y[1]] * units('m/s')
 ```
 
 ### 5. Simple plot.
