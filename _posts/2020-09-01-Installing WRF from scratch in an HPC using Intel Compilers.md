@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing WRF from scratch in an HPC using Intel Compilers
+title: Installing WRF from scratch in an HPC using Intel (Classic) Compilers
 author: Pratiman
 ---
 
@@ -15,9 +15,9 @@ Here is the installation of the WRF 4.2.1 model using Intel compilers. It will b
 4. NetCDF
 5. JasPer
 
-Generally, these libraries should be their (except for Jasper). If you do not have those then install using the steps below or you directly start from Step 5:
+Generally, these libraries should be there (except for Jasper). If you do not have those, then install using the steps below, or you directly start from Step 5:
 
-### Setting up the environemnt for Intel compilers
+### Setting up the environment for Intel classic compilers
 ```bash
 export CC=icc
 export FC=ifort
@@ -29,7 +29,7 @@ export CXX=icpc
 ```bash
 mkdir wrf_install_intel
 cd wrf_install_intel/
-wget https://zlib.net/zlib-1.2.11.tar.gz
+wget https://zlib.net/fossils/zlib-1.2.11.tar.gz
 
 tar xvf zlib-1.2.11.tar.gz
 cd zlib-1.2.11/
@@ -93,7 +93,7 @@ make
 make install
 ```
 
-> If there is a compilation error then following fix maybe implemented (Thanks to Lena Marie Müller):
+> If there is a compilation error, then following fix may be implemented (Thanks to Lena Marie Müller):
 ```sed -i 's/char *optstr/const char *optstr/g' src/libjasper/jpg/jpg_dummy.c```
 
 ## WRF Install
@@ -157,7 +157,7 @@ fseeko64 is supported
 ```
 
 ### Edit configure.wrf
-Edit here using your favorite editor:
+Edit here using your favourite editor:
 ```
 DM_FC           =       mpiifort
 DM_CC           =       mpiicc
@@ -181,7 +181,7 @@ This step will take around 30-45 min to complete. Be patient!
  
 ==========================================================================
 ```
-Sometimes, you have again re-run the compile code, if you do not get this as the output.
+Sometimes, you have to re-run the compile code again if you do not get this as the output.
 
 ## WPS Install
 ```bash
